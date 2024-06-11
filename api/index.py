@@ -41,5 +41,4 @@ def download(filename):
     decrypted_content = caesar_cipher_decrypt(decode_base64(encrypted_content), 3)
     return send_file('uploads/' + filename, as_attachment=True)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+app.run(debug=True)
